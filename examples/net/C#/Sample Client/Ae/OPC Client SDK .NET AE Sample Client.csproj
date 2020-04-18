@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3156BE93-8C15-4CB0-AC22-782094E05344}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OpcClientSdk48.AeSampleClient</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OpcClientSdk.Ae.SampleClient</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>OpcClientSdk.Ae.SampleClient.MainForm</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpcClientSdk48">
+      <HintPath>..\..\..\..\..\bin\net48\OpcClientSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Browse\BitMaskCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Browse\BrowseCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Browse\BrowseDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\BrowseFiltersDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\CategoriesViewDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\ConditionStateCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Browse\ConditionStateDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\ConditionsViewDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\EventTypesSelectDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\GetEnabledStateDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\ItemIDsViewDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\SetEnabledStateDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Server\FiltersViewDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Server\ServerStatusCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Server\ServerStatusDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription\AcknowledgerEditDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription\AreaSourceListCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\AttributesCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\CategoriesCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\EventListCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\NotificationCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\NotificationDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription\QualifiedNameEditDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription\SubscriptionEditDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription\SubscriptionFiltersEditCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\SubscriptionsCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\SubscriptionStateEditCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Browse\BitMaskCtrl.resx">
+      <DependentUpon>BitMaskCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\BrowseCtrl.resx">
+      <DependentUpon>BrowseCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\BrowseDlg.resx">
+      <DependentUpon>BrowseDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\BrowseFiltersDlg.resx">
+      <DependentUpon>BrowseFiltersDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\CategoriesViewDlg.resx">
+      <DependentUpon>CategoriesViewDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\ConditionStateCtrl.resx">
+      <DependentUpon>ConditionStateCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\ConditionStateDlg.resx">
+      <DependentUpon>ConditionStateDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\ConditionsViewDlg.resx">
+      <DependentUpon>ConditionsViewDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\EventTypesSelectDlg.resx">
+      <DependentUpon>EventTypesSelectDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\GetEnabledStateDlg.resx">
+      <DependentUpon>GetEnabledStateDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\ItemIDsViewDlg.resx">
+      <DependentUpon>ItemIDsViewDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\SetEnabledStateDlg.resx">
+      <DependentUpon>SetEnabledStateDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\FiltersViewDlg.resx">
+      <DependentUpon>FiltersViewDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\ServerStatusCtrl.resx">
+      <DependentUpon>ServerStatusCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\ServerStatusDlg.resx">
+      <DependentUpon>ServerStatusDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\AcknowledgerEditDlg.resx">
+      <DependentUpon>AcknowledgerEditDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\AreaSourceListCtrl.resx">
+      <DependentUpon>AreaSourceListCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\AttributesCtrl.resx">
+      <DependentUpon>AttributesCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\CategoriesCtrl.resx">
+      <DependentUpon>CategoriesCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\EventListCtrl.resx">
+      <DependentUpon>EventListCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\NotificationCtrl.resx">
+      <DependentUpon>NotificationCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\NotificationDlg.resx">
+      <DependentUpon>NotificationDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\QualifiedNameEditDlg.resx">
+      <DependentUpon>QualifiedNameEditDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\SubscriptionEditDlg.resx">
+      <DependentUpon>SubscriptionEditDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\SubscriptionFiltersEditCtrl.resx">
+      <DependentUpon>SubscriptionFiltersEditCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\SubscriptionsCtrl.resx">
+      <DependentUpon>SubscriptionsCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\SubscriptionStateEditCtrl.resx">
+      <DependentUpon>SubscriptionStateEditCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="App.ico" />
+    <Content Include="Config Files\OPCSample.OPCEventServer.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\OPC Client SDK .NET Controls.csproj">
+      <Project>{6142e9a6-5b32-423d-aee2-dd23ea5b9bab}</Project>
+      <Name>OPC Client SDK .NET Controls.vs2017</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

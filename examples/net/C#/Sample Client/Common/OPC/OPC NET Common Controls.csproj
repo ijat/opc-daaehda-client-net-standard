@@ -1,0 +1,234 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC5779F3-2523-42A6-8AC6-02F21A320E7C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OpcClientSdk20.Controls.v4</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpcClientSdk.Controls</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpcRcw.Ae">
+      <Name>OpcRcw.Ae</Name>
+      <HintPath>..\..\..\bin\OpcRcw.Ae.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Comn">
+      <Name>OpcRcw.Comn</Name>
+      <HintPath>..\..\..\bin\OpcRcw.Comn.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Da">
+      <Name>OpcRcw.Da</Name>
+      <HintPath>..\..\..\bin\OpcRcw.Da.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Dx">
+      <Name>OpcRcw.Dx</Name>
+      <HintPath>..\..\..\bin\OpcRcw.Dx.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcRcw.Hda">
+      <Name>OpcRcw.Hda</Name>
+      <HintPath>..\..\..\bin\OpcRcw.Hda.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="OpcClientSdk20.v4, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\OpcClientSdk20.v4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BrowseItemsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseTreeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTypeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditArrayDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBinaryDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditComplexValueDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditObjectListDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditValueDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnumCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocaleCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocaleSelectDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkCredentialsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opc.SampleClient.Factory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProxyServerDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectServerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectServerDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValueCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="BrowseItemsDlg.resx">
+      <DependentUpon>BrowseItemsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseTreeCtrl.resx">
+      <DependentUpon>BrowseTreeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTypeCtrl.resx">
+      <DependentUpon>DataTypeCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditArrayDlg.resx">
+      <DependentUpon>EditArrayDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBinaryDlg.resx">
+      <DependentUpon>EditBinaryDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditComplexValueDlg.resx">
+      <DependentUpon>EditComplexValueDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditObjectListDlg.resx">
+      <DependentUpon>EditObjectListDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditValueDlg.resx">
+      <DependentUpon>EditValueDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumCtrl.resx">
+      <DependentUpon>EnumCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocaleCtrl.resx">
+      <DependentUpon>LocaleCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocaleSelectDlg.resx">
+      <DependentUpon>LocaleSelectDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkCredentialsDlg.resx">
+      <DependentUpon>NetworkCredentialsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProxyServerDlg.resx">
+      <DependentUpon>ProxyServerDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectServerCtrl.resx">
+      <DependentUpon>SelectServerCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectServerDlg.resx">
+      <DependentUpon>SelectServerDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValueCtrl.resx">
+      <DependentUpon>ValueCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

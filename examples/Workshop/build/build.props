@@ -1,0 +1,8 @@
+<!-- This file may be overwritten by automation. -->
+<Project>
+  <PropertyGroup>
+    <BuildDate>3/29/2020 7:16:22 AM</BuildDate>
+    <VersionBuild Condition="'$(VersionBuild)' == ''">0329</VersionBuild>
+    <VersionRevision Condition="'$(VersionRevision)' == ''">2020</VersionRevision>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net48</TargetFrameworks>
+    <AssemblyName>Technosoftware.DaClientConsole</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Technosoftware.DaClientConsole</PackageId>
+    <Company>Technosoftware GmbH</Company>
+    <Product>OPC DA/AE/HDA Client SDK .NET Standard</Product>
+    <Description>Technosoftware DA Client Console</Description>
+    <Copyright>Copyright © 2020 Technosoftware GmbH</Copyright>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <Reference Include="Opc.Ua.Core">
+      <HintPath>..\..\..\bin\net48\OpcClientSdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+    <Reference Include="Opc.Ua.Core">
+      <HintPath>..\..\..\bin\net472\OpcClientSdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+    <Reference Include="Opc.Ua.Core">
+      <HintPath>..\..\..\bin\net462\OpcClientSdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+    <Reference Include="Opc.Ua.Core">
+      <HintPath>..\..\..\bin\netstandard2.1\OpcClientSdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Selectors" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.4" />
+  </ItemGroup>
+	  
+</Project>
